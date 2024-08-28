@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>com.TaiwanStock</id>
+    <name>TaiwanStock</name>
+    <vendor email="sakakibara.yoichi@gmail.com" url="https://github.com/sakakibara-yoichi">sakakibara.yoichi</vendor>
+    <description><![CDATA[
+        Taiwan stock inquiry - display real-time information of Taiwan stock
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="TaiwanStock"
+                    factoryClass="com.taiwanstock.mainWindowFactory"
+                    anchor="bottom"
+                    icon="/icons/toolWindow.svg"
+        />
+    </extensions>
+</idea-plugin>
