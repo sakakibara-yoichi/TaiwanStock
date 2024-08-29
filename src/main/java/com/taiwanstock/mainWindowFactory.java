@@ -19,7 +19,7 @@ public class mainWindowFactory implements ToolWindowFactory, DumbAware {
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
         EquoteComponent equoteComponent = new EquoteComponent();
         statusBar = WindowManager.getInstance().getStatusBar(project);
-        ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
+        ContentFactory contentFactory = ContentFactory.getInstance();
         Content content = contentFactory.createContent(equoteComponent.getContent(), "", true);
         content.getComponent().setMinimumSize(new Dimension(content.getComponent().getWidth(), 300));
         toolWindow.getContentManager().addContent(content);

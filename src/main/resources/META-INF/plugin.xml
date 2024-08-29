@@ -3,8 +3,26 @@
     <name>TaiwanStock</name>
     <vendor email="sakakibara.yoichi@gmail.com" url="https://github.com/sakakibara-yoichi">sakakibara.yoichi</vendor>
     <description><![CDATA[
-        Taiwan stock inquiry - display real-time information of Taiwan stock
+        A plugin that allows you to check Taiwan stock information while developing your programs.
+        Features to be added:
+            1. Add charts
+            2. Add auto-refresh data
+            3. Add to favorites
+
+        開發程式的同時又能夠查詢台股的插件
+        預計新增功能:
+            1.新增圖表
+            2.新增定時刷新資料
+            3.加入我的最愛
     ]]></description>
+    <change-notes>
+        <![CDATA[
+        <ul>
+            <li>新增基本股票搜尋功能</li>
+            <li>修正版本號</li>
+        </ul>
+        ]]>
+    </change-notes>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="TaiwanStock"
